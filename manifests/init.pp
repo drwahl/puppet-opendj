@@ -39,6 +39,7 @@ class opendj (
 
   package { 'opendj':
     ensure => present,
+    install_options => '--force-yes'
   }
 
   group { $group:
